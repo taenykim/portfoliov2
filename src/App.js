@@ -6,13 +6,13 @@ import Project from "./components/Project/Project";
 
 class App extends Component {
   state = {
-    now_contents: "home" //home, project(n)
+    now_contents: "HOME" //home, project(n)
   };
   render() {
     return (
       <div className="full_container">
         <Menu now_contents={this.state.now_contents} />
-        {this.state.now_contents === "home" && <Home />}
+        {this.state.now_contents === "HOME" && <Home />}
         {this.state.now_contents === "project1" && (
           <Project now_contents={this.state.now_contents} />
         )}

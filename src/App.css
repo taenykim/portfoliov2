@@ -1,6 +1,46 @@
-.full_container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900&display=swap");
+@font-face {
+  font-family: "escore1";
+  src: url(font/SCDream1.otf) format("truetype");
+}
+@font-face {
+  font-family: "escore2";
+  src: url(font/SCDream2.otf) format("truetype");
+}
+@font-face {
+  font-family: "escore3";
+  src: url(font/SCDream3.otf) format("truetype");
+}
+@font-face {
+  font-family: "escore4";
+  src: url(font/SCDream4.otf) format("truetype");
+}
+@font-face {
+  font-family: "escore5";
+  src: url(font/SCDream5.otf) format("truetype");
+}
+@font-face {
+  font-family: "escore6";
+  src: url(font/SCDream6.otf) format("truetype");
+}
+@font-face {
+  font-family: "escore7";
+  src: url(font/SCDream7.otf) format("truetype");
+}
+@font-face {
+  font-family: "escore8";
+  src: url(font/SCDream8.otf) format("truetype");
+}
+@font-face {
+  font-family: "escore9";
+  src: url(font/SCDream9.otf) format("truetype");
+}
+.full_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  width: 100%;
 }
