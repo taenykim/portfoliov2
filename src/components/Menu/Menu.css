@@ -1,0 +1,28 @@
+.menu_container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+    background: white;
+    top: 0;
+}
+.menu_home{
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.menu_now{
+    display: flex;
+    align-items: center;
+}
+.menu_menu{
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
