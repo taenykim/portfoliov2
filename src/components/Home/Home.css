@@ -98,6 +98,7 @@
     width: 100vw;
     height: auto;
   }
+  
 }
 @media (max-width: 770px) {
   .home_about_desc {
