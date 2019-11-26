@@ -8,7 +8,7 @@ class Home extends Component {
   render() {
     const github_style = {
       width: "30px",
-      marginRight: "20px"
+      marginRight: "15px",
     };
 
     return (
@@ -24,7 +24,7 @@ class Home extends Component {
             </div>
           </div>
         </div>
-          <div className="home_about_title">ABOUT</div>
+        <div className="home_about_title">ABOUT</div>
         <div className="home_about_container">
           <div className="home_about_desc">
             <div className="home_about_desc_head">안녕하세요</div>
@@ -35,9 +35,19 @@ class Home extends Component {
               되었습니다.
             </div>
             <div className="home_about_desc_foot">
-              <img style={github_style} src={github} />
-              <img style={github_style} src={github} />
-              <img style={github_style} src={github} />
+              <div className="home_about_desc_foot_sns">
+                <img style={github_style} src={github} />
+                <img style={github_style} src={github} />
+                <img style={github_style} src={github} />
+              </div>
+              <div className="home_about_desc_foot_skills">
+                <img style={github_style} src={github} />
+                <img style={github_style} src={github} />
+                <img style={github_style} src={github} />
+                <img style={github_style} src={github} />
+                <img style={github_style} src={github} />
+                <img style={github_style} src={github} />
+              </div>
             </div>
           </div>
           <img className="home_about_image" src={about} />
