@@ -91,9 +91,20 @@
   font-weight: 900;
   font-size: 70px;
 }
+.home_project_subtitle {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  font-family: "escore7";
+  align-self: center;
+  font-size: 13px;
+  color: rgb(152, 129, 194);
+  margin-bottom: 40px;
+}
 .home_project_container {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
 }

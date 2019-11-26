@@ -87,6 +87,7 @@ class Home extends Component {
         {/* <div className="home_about_title">ABOUT</div> */}
 
         <div className="home_project_title">PROJECT</div>
+        <div className="home_project_subtitle">저는 주로 리액트를 사용합니다.</div>
         <div className="home_project_container">
           <div className="home_project_item">
             <div className="home_project_item_desc">
