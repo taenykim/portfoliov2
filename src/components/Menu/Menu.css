@@ -8,6 +8,7 @@
     z-index: 10;
     background: white;
     top: 0;
+    box-shadow: 1px 1px black;
 }
 .menu_home{
     margin-left: 40px;
@@ -22,6 +23,8 @@
     font-family: "Titillium Web", "san-selif";
     font-weight: 900;
     color: rgba(96, 74, 138);
+    font-size: 16px;
+    transition: 1s;
 }
 .menu_menu{
     margin-right: 40px;
@@ -29,3 +32,12 @@
     align-items: center;
     cursor: pointer;
 }
+
+@media (max-width: 380px) {
+    .menu_home{
+        margin-left: 30px;
+    }
+    .menu_menu{
+        margin-right: 30px;
+    }
+  }

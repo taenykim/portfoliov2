@@ -8,15 +8,22 @@ class App extends Component {
   state = {
     now_contents: "HOME" //home, project(n)
   };
+  handleUpdate = data => {
+    this.setState({
+      now_contents: data
+    });
+  };
   render() {
     return (
       <div className="full_container">
-        <Menu now_contents={this.state.now_contents} />
-        {this.state.now_contents === "HOME" && <Home />}
-        {this.state.now_contents === "project1" && (
-          <Project now_contents={this.state.now_contents} />
+        <Menu
+          onUpdate={this.handleUpdate}
+          now_contents={this.state.now_contents}
+        />
+        {this.state.now_contents === "HOME" && (
+          <Home onUpdate={this.handleUpdate} />
         )}
-        {this.state.now_contents === "project2" && (
+        {this.state.now_contents != "HOME" && (
           <Project now_contents={this.state.now_contents} />
         )}
       </div>
