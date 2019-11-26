@@ -24,6 +24,7 @@
     font-weight: 900;
     color: rgba(96, 74, 138);
     font-size: 16px;
+    transition: 1s;
 }
 .menu_menu{
     margin-right: 40px;

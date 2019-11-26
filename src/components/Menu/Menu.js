@@ -4,6 +4,19 @@ import logo from "./gg.png";
 import menu from "./gg2.png";
 
 class Menu extends Component {
+  componentDidMount() {
+    window.addEventListener("scroll", this.onScroll);
+  }
+  onScroll = e => {
+    const { now_contents } = this.props;
+    const scrollTop = ("scroll", e.srcElement.scrollingElement.scrollTop);
+    const menu_now_name = document.getElementsByClassName("menu_now_name");
+    if (scrollTop > window.innerHeight - 200 && now_contents === "HOME") {
+      menu_now_name[0].innerHTML = "ABOUT";
+    } else if(now_contents === "HOME") {
+      menu_now_name[0].innerHTML = "HOME";
+    }
+  };
   handleHome = () => {
     const { now_contents, onUpdate } = this.props;
 
@@ -29,7 +42,7 @@ class Menu extends Component {
         </div>
         <div className="menu_now">
           <span style={emoji_style}>🚀</span>
-          {now_contents}
+          <span className="menu_now_name">{now_contents}</span>
           <span style={emoji_style}>🚀</span>
         </div>
         <div className="menu_menu">
