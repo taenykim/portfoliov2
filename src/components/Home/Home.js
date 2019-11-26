@@ -5,14 +5,34 @@ import github from "./gg.png";
 import project_image from "./1.jpg";
 
 class Home extends Component {
+  state = {
+    now_contents: "HOME"
+  };
+
+  updateContents1 = () => {
+    const { onUpdate } = this.props;
+    onUpdate("PROJECT1");
+  };
+
+  updateContents2 = () => {
+    const { onUpdate } = this.props;
+    onUpdate("PROJECT2");
+  };
+
+  updateContents3 = () => {
+    const { onUpdate } = this.props;
+    onUpdate("PROJECT3");
+  };
+
   render() {
     const github_style = {
       width: "30px",
-      marginRight: "15px",
+      height: "30px",
+      marginRight: "15px"
     };
 
     return (
-      <div className="home_container">
+      <div className="home_container" id="Home">
         <div className="home_first_container">
           <div>
             <div>
@@ -54,9 +74,21 @@ class Home extends Component {
         </div>
         <div className="home_project_title">PROJECT</div>
         <div className="home_project_container">
-          <img className="project_image" src={project_image} />
-          <img className="project_image" src={project_image} />
-          <img className="project_image" src={project_image} />
+          <img
+            className="project_image"
+            src={project_image}
+            onClick={this.updateContents1}
+          />
+          <img
+            className="project_image"
+            src={project_image}
+            onClick={this.updateContents2}
+          />
+          <img
+            className="project_image"
+            src={project_image}
+            onClick={this.updateContents3}
+          />
         </div>
       </div>
     );

@@ -4,6 +4,15 @@ import logo from "./gg.png";
 import menu from "./gg2.png";
 
 class Menu extends Component {
+  handleHome = () => {
+    const { now_contents, onUpdate } = this.props;
+
+    if (now_contents === "HOME") {
+      document.getElementById("Home").scrollIntoView();
+    } else {
+      onUpdate("HOME");
+    }
+  };
   render() {
     const logo_style = {
       height: "30px"
@@ -15,7 +24,7 @@ class Menu extends Component {
     const { now_contents } = this.props;
     return (
       <div className="menu_container">
-        <div className="menu_home">
+        <div className="menu_home" onClick={this.handleHome}>
           <img style={logo_style} src={logo} />
         </div>
         <div className="menu_now">

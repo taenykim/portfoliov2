@@ -27,12 +27,12 @@
   /* background: rgb(227, 173, 248); */
 }
 .home_about_title {
+  background: rgba(96, 74, 138);
   width: 100vw;
   display: flex;
   justify-content: center;
   font-family: "Titillium Web", "san-selif";
   color: white;
-  text-shadow: 0 0 4px rgba(96, 74, 138);
   font-weight: 900;
   font-size: 80px;
   letter-spacing: 2px;
@@ -92,8 +92,12 @@
   align-items: center;
 }
 .project_image {
-  width: 1020px;
+  width: 720px;
   margin-bottom: 30px;
+  cursor: pointer;
+}
+.project_image:hover {
+  opacity: 40%;
 }
 
 @media (max-width: 1070px) {
@@ -112,10 +116,6 @@
   }
   .home_about_desc_foot {
     margin-bottom: 40px;
-  }
-  .project_image {
-    width: 100vw;
-    height: auto;
   }
 }
 @media (max-width: 770px) {
@@ -151,9 +151,16 @@
   .home_project_title{
     font-size: 50px;
   }
+  .project_image {
+    width: 100vw;
+    height: auto;
+  }
 }
 @media (max-width: 380px) {
   .home_first_container{
     font-size: 40px;
+  }
+  .home_about_desc_foot_skills {
+    margin-top: 40px;
   }
 }

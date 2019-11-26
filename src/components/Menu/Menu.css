@@ -8,6 +8,7 @@
     z-index: 10;
     background: white;
     top: 0;
+    box-shadow: 1px 1px black;
 }
 .menu_home{
     margin-left: 40px;
