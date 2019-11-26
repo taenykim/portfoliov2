@@ -13,7 +13,7 @@ class Menu extends Component {
     const scrollTop = ("scroll", e.srcElement.scrollingElement.scrollTop);
     const menu_now_name = document.getElementsByClassName("menu_now_name");
     if (scrollTop > window.innerHeight - 200 && now_contents === "HOME") {
-      menu_now_name[0].innerHTML = "ABOUT";
+      menu_now_name[0].innerHTML = "HELLO!";
     } else if(now_contents === "HOME") {
       menu_now_name[0].innerHTML = "HOME";
     }
@@ -42,9 +42,9 @@ class Menu extends Component {
           <img style={logo_style} src={logo} />
         </div>
         <div className="menu_now">
-          <span style={emoji_style}>🚀</span>
+          <span style={emoji_style}>🚀&nbsp;&nbsp;</span>
           <span className="menu_now_name">{now_contents}</span>
-          <span style={emoji_style}>🚀</span>
+          <span style={emoji_style}>&nbsp;&nbsp;🚀</span>
         </div>
         <div className="menu_menu">
           <img style={logo_style} src={menu_button} />

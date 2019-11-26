@@ -1,15 +1,21 @@
 .home_container {
 }
 .home_first_container {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  width: 100vw;
   font-family: "Titillium Web", "san-selif";
   font-weight: 900;
-  color: rgba(96, 74, 138);
+  color: white;
+  background: url(background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   font-size: 40px;
+}
+.home_first_container .home_first_title{
   margin-left: -20vw;
 }
 .home_first_container_br {
@@ -27,14 +33,14 @@
   /* background: rgb(227, 173, 248); */
 }
 .home_about_title {
-  background: rgba(96, 74, 138);
+  background: rgb(152, 129, 194);
   width: 100vw;
   display: flex;
   justify-content: center;
   font-family: "Titillium Web", "san-selif";
   color: white;
   font-weight: 900;
-  font-size: 80px;
+  font-size: 4px;
   letter-spacing: 2px;
 }
 .home_about_desc {
@@ -91,20 +97,35 @@
   flex-direction: column;
   align-items: center;
 }
+.home_project_item {
+  position: relative;
+  margin-bottom: 30px;
+}
+.home_project_item_desc {
+  position: absolute;
+  color: white;
+  left: 30px;
+  bottom: 30px;
+}
+.home_project_item_desc2 {
+  position: absolute;
+  color: white;
+  right: 30px;
+  bottom: 30px;
+}
 .project_image {
   width: 720px;
-  margin-bottom: 30px;
   cursor: pointer;
 }
 .project_image:hover {
-  opacity: 40%;
+  /* opacity: 10%; */
 }
 
 @media (max-width: 1070px) {
   .home_container {
     /* margin-top: 120px; */
   }
-  .home_first_container {
+  .home_first_container .home_first_title{
     margin-left: 0;
   }
   .home_about_desc {
@@ -120,7 +141,7 @@
   
 }
 @media (max-width: 770px) {
-  .home_first_container {
+  .home_first_container .home_first_title{
     margin-left: -5vw;
   }
   .home_about_desc {
@@ -155,6 +176,25 @@
   .project_image {
     width: 100vw;
     height: auto;
+  }
+  .home_project_item {
+    display: flex;
+    flex-direction: column;
+  }
+  .home_project_item_desc {
+    position: absolute;
+    color: white;
+    left: 30px;
+    bottom: 30px;
+    margin-bottom: 30px;
+    font-size: 15px;
+  }
+  .home_project_item_desc2 {
+    position: absolute;
+    color: white;
+    left: 30px;
+    bottom: 30px;
+    font-size: 15px;
   }
 }
 @media (max-width: 380px) {
