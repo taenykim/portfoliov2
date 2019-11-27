@@ -30,6 +30,11 @@ class Home extends Component {
     onUpdate("PROJECT3");
   };
 
+  updateContents4 = () => {
+    const { onUpdate } = this.props;
+    onUpdate("PROJECT4");
+  };
+
   render() {
     const github_style = {
       width: "30px",
@@ -128,6 +133,19 @@ class Home extends Component {
               className="project_image"
               src={project_image}
               onClick={this.updateContents3}
+            />
+          </div>
+          <div className="home_project_item">
+            <div className="home_project_item_desc">
+              <div style={project_item_desc_style}>NONE</div>없음
+            </div>
+            <div className="home_project_item_desc2">
+              #NONE #없음
+            </div>
+            <img
+              className="project_image"
+              src={project_image}
+              onClick={this.updateContents4}
             />
           </div>
         </div>

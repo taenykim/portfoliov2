@@ -26,7 +26,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 120px;
+  margin-bottom: 60px;
   width: 100vw;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -89,7 +89,8 @@
   font-family: "Titillium Web", "san-selif";
   color: rgba(96, 74, 138);
   font-weight: 900;
-  font-size: 70px;
+  font-size: 30px;
+  text-decoration: underline;
 }
 .home_project_subtitle {
   width: 100vw;
@@ -105,12 +106,16 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 .home_project_item {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 .home_project_item_desc {
   position: absolute;
@@ -125,7 +130,7 @@
   bottom: 30px;
 }
 .project_image {
-  width: 720px;
+  width: 38vw;
   cursor: pointer;
 }
 .project_image:hover {
@@ -149,7 +154,10 @@
   .home_about_desc_foot {
     margin-bottom: 40px;
   }
-  
+  .project_image {
+    width: 60vw;
+    cursor: pointer;
+  }
 }
 @media (max-width: 770px) {
   .home_first_container .home_first_title{
@@ -181,8 +189,9 @@
     position: static;
     margin-bottom: 20px;
   }
-  .home_project_title{
-    font-size: 50px;
+  .home_project_container {
+    padding-left: 0;
+    padding-right: 0;
   }
   .project_image {
     width: 100vw;
@@ -191,6 +200,7 @@
   .home_project_item {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
   .home_project_item_desc {
     position: absolute;
