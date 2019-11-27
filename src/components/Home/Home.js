@@ -13,7 +13,9 @@ import jquery from "./jquery.png";
 import sass from "./sass.png";
 import aws from "./aws.png";
 import mysql from "./mysql.png";
-import facebook from "./facebook.png";
+import project_image2 from "./background1.jpg";
+import project_image3 from "./background2.jpg";
+import project_image4 from "./background3.jpg";
 import project_image from "./1.jpg";
 
 class Home extends Component {
@@ -54,8 +56,9 @@ class Home extends Component {
       // WebkitFilter:"grayscale(100%)",
     };
     const project_item_desc_style = {
-      fontSize: "40px",
-      fontFamily: "escore7"
+      fontSize: "20px",
+      fontFamily: "escore9",
+      color: "#ddd"
     };
 
     return (
@@ -69,6 +72,9 @@ class Home extends Component {
               Kim Taeeun's <div className="home_first_container_br"></div>
               Portfolio v.2
             </div>
+          </div>
+          <div className="home_first_reactDesc">
+            본 사이트는 리액트로 만들었습니다.
           </div>
         </div>
         {/* <div className="home_about_title">ABOUT</div> */}
@@ -100,12 +106,6 @@ class Home extends Component {
                   href="https://www.instagram.com/kimtaeeeny2/"
                 >
                   <img style={image_style} src={insta} />
-                </a>
-                <a
-                  style={image_container_style}
-                  href="https://velog.io/@kimtaeeeny"
-                >
-                  <img style={image_style} src={facebook} />
                 </a>
               </div>
               <div className="home_about_desc_foot_skills">
@@ -172,7 +172,7 @@ class Home extends Component {
             </div>
             <img
               className="project_image"
-              src={project_image}
+              src={project_image2}
               onClick={this.updateContents2}
             />
           </div>
@@ -185,7 +185,7 @@ class Home extends Component {
             </div>
             <img
               className="project_image"
-              src={project_image}
+              src={project_image3}
               onClick={this.updateContents3}
             />
           </div>
@@ -196,10 +196,13 @@ class Home extends Component {
             <div className="home_project_item_desc2">#NONE #없음</div>
             <img
               className="project_image"
-              src={project_image}
+              src={project_image4}
               onClick={this.updateContents4}
             />
           </div>
+        </div>
+        <div className="home_foot_container">
+          <div>💌 kimtaeeeny@gmail.com</div>
         </div>
       </div>
     );

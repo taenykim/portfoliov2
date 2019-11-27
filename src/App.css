@@ -47,11 +47,11 @@ body {
 }
 .sidebar {
   position: fixed;
-  width: 25vw;
+  width: 37vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.8);
   top: 0;
-  right: -25vw;
+  right: -37vw;
   z-index: 5;
   transition: 0.35s;
   color: white;

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Menu.css";
 import logo from "./logo1.png";
 import menu_button from "./menu_button.png";
+import x_button from "./x_button.png";
 
 class Menu extends Component {
   componentDidMount() {
@@ -52,7 +53,7 @@ class Menu extends Component {
           }}
         >
           {!this.props.toggle_sidebar && ( <img className="menu_menu_img" style={logo_style} src={menu_button} />)}
-          {this.props.toggle_sidebar && ( <img className="menu_menu_img" style={logo_style} src={logo} />)}         
+          {this.props.toggle_sidebar && ( <img className="menu_menu_img" style={logo_style} src={x_button} />)}         
         </div>
       </div>
     );
