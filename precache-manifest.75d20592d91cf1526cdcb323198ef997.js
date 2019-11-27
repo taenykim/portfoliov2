@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dd6e13a0d603504621ee70dda976ba75",
+    "revision": "69bc25247c22b6530e4717bf7f24ffe2",
     "url": "/portfoliov2/index.html"
   },
   {
-    "revision": "4aa6f7d69e2c9ec1568a",
-    "url": "/portfoliov2/static/css/main.d5695089.chunk.css"
+    "revision": "c3c7fca34a29b1bf97b8",
+    "url": "/portfoliov2/static/css/main.ad31595a.chunk.css"
   },
   {
-    "revision": "4fb928353a8a626795fd",
-    "url": "/portfoliov2/static/js/2.ab25308d.chunk.js"
+    "revision": "91d2a42d97d0b96f6ea0",
+    "url": "/portfoliov2/static/js/2.43ea753c.chunk.js"
   },
   {
-    "revision": "4aa6f7d69e2c9ec1568a",
-    "url": "/portfoliov2/static/js/main.725a18d2.chunk.js"
+    "revision": "c3c7fca34a29b1bf97b8",
+    "url": "/portfoliov2/static/js/main.90b2f87d.chunk.js"
   },
   {
     "revision": "878549ee2bcf80f7514a",
@@ -68,12 +68,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfoliov2/static/media/background.79437988.jpg"
   },
   {
-    "revision": "d7c53238a4ed26646e622cb63f022884",
-    "url": "/portfoliov2/static/media/css3.d7c53238.png"
+    "revision": "21b530d2456b44507c793d457f87bf74",
+    "url": "/portfoliov2/static/media/background1.21b530d2.jpg"
   },
   {
-    "revision": "e68f5a826ff2efa8d305ff8daee9dcc2",
-    "url": "/portfoliov2/static/media/facebook.e68f5a82.png"
+    "revision": "f8091367fec031707a47198950911da4",
+    "url": "/portfoliov2/static/media/background2.f8091367.jpg"
+  },
+  {
+    "revision": "168b0b9046e2aab29dcbb1293de5ee7f",
+    "url": "/portfoliov2/static/media/background3.168b0b90.jpg"
+  },
+  {
+    "revision": "d7c53238a4ed26646e622cb63f022884",
+    "url": "/portfoliov2/static/media/css3.d7c53238.png"
   },
   {
     "revision": "a14bb690ab23a535547cf8156e1ee3ee",
@@ -110,5 +118,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "47ce6e77f039020ee2e76a10c1e988e9",
     "url": "/portfoliov2/static/media/react.47ce6e77.png"
+  },
+  {
+    "revision": "6314878e31a67c508473cf95db1abaf8",
+    "url": "/portfoliov2/static/media/x_button.6314878e.png"
   }
 ]);
