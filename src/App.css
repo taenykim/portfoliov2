@@ -43,6 +43,7 @@
 }
 body {
   width: 100vw;
+  overflow-x: hidden;
 }
 .sidebar {
   position: fixed;
@@ -75,17 +76,25 @@ body {
   cursor: pointer;
   margin-bottom: 10px;
 }
-@media (max-width: 770px) {
+@media (max-width: 1070px) {
   .sidebar {
     width: 50vw;
     right: -50vw;
   }
+  .sidebar_list {
+    font-size: 40px;
+  }
+}
+@media (max-width: 770px) {
+  .sidebar {
+    width: 100vw;
+    right: -100vw;
+  }
   .sidebar_title {
-    font-size: 20px;
     padding-bottom: 20px;
   }
   .sidebar_list {
-    font-size: 10px;
+    font-size: 30px;
   }
   .sidebar_list > li {
     margin-bottom: 20px;

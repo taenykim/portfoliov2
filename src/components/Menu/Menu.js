@@ -42,13 +42,17 @@ class Menu extends Component {
         </div>
         <div className="menu_now">
           <span style={emoji_style}>🚀&nbsp;&nbsp;</span>
-          <span className="menu_now_name">{now_contents}</span>
+          <span className="menu_now_name">{this.props.toggle_sidebar?("MENU"):(now_contents)}</span>
           <span style={emoji_style}>&nbsp;&nbsp;🚀</span>
         </div>
-        <div className="menu_menu" onClick={()=>{
-          this.props.onToggle("iamsidebarbutton");
-        }}>
-          <img style={logo_style} src={menu_button} />
+        <div
+          className="menu_menu"
+          onClick={() => {
+            this.props.onToggle("iamsidebarbutton");
+          }}
+        >
+          {!this.props.toggle_sidebar && ( <img className="menu_menu_img" style={logo_style} src={menu_button} />)}
+          {this.props.toggle_sidebar && ( <img className="menu_menu_img" style={logo_style} src={logo} />)}         
         </div>
       </div>
     );

@@ -37,8 +37,6 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
-}
-@media (max-width: 380px) {
   .menu_home {
     margin-left: 30px;
   }

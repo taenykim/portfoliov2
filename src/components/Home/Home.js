@@ -1,13 +1,19 @@
 import React, { Component } from "react";
 import "./Home.css";
 import about from "./12.jpg";
-import velog from "./velog.png"
+import velog from "./velog.png";
 import github from "./github.png";
-import facebook from "./facebook.png";
+import insta from "./insta.png";
 import react from "./react.png";
-import html from "./html5.svg"
-import css from "./css3.svg";
+import html from "./html5.png";
+import css from "./css3.png";
 import js from "./javascript.svg";
+import nodejs from "./nodejs.png";
+import jquery from "./jquery.png";
+import sass from "./sass.png";
+import aws from "./aws.png";
+import mysql from "./mysql.png";
+import facebook from "./facebook.png";
 import project_image from "./1.jpg";
 
 class Home extends Component {
@@ -36,10 +42,14 @@ class Home extends Component {
   };
 
   render() {
-    const github_style = {
+    const image_style = {
       width: "30px",
-      height: "30px",
-      marginRight: "15px",
+      height: "30px"
+      // filter: "grayscale(100%)",
+      // WebkitFilter:"grayscale(100%)",
+    };
+    const image_container_style = {
+      marginRight: "15px"
       // filter: "grayscale(100%)",
       // WebkitFilter:"grayscale(100%)",
     };
@@ -73,17 +83,59 @@ class Home extends Component {
             </div>
             <div className="home_about_desc_foot">
               <div className="home_about_desc_foot_sns">
-                <img style={github_style} src={github} />
-                <img style={github_style} src={velog} />
-                <img style={github_style} src={facebook} />
+                <a
+                  style={image_container_style}
+                  href="https://github.com/taenykim"
+                >
+                  <img style={image_style} src={github} />
+                </a>
+                <a
+                  style={image_container_style}
+                  href="https://velog.io/@kimtaeeeny"
+                >
+                  <img style={image_style} src={velog} />
+                </a>
+                <a
+                  style={image_container_style}
+                  href="https://www.instagram.com/kimtaeeeny2/"
+                >
+                  <img style={image_style} src={insta} />
+                </a>
+                <a
+                  style={image_container_style}
+                  href="https://velog.io/@kimtaeeeny"
+                >
+                  <img style={image_style} src={facebook} />
+                </a>
               </div>
               <div className="home_about_desc_foot_skills">
-                <img style={github_style} src={react} />
-                <img style={github_style} src={html} />
-                <img style={github_style} src={css} />
-                <img style={github_style} src={js} />
-                <img style={github_style} src={github} />
-                <img style={github_style} src={github} />
+                <div style={image_container_style}>
+                  <img style={image_style} src={react} />
+                </div>
+                <div style={image_container_style}>
+                  <img style={image_style} src={html} />
+                </div>
+                <div style={image_container_style}>
+                  <img style={image_style} src={css} />
+                </div>
+                <div style={image_container_style}>
+                  <img style={image_style} src={js} />
+                </div>
+                <div style={image_container_style}>
+                  <img style={image_style} src={jquery} />
+                </div>
+                <div style={image_container_style}>
+                  <img style={image_style} src={nodejs} />
+                </div>
+                <div style={image_container_style}>
+                  <img style={image_style} src={sass} />
+                </div>
+                <div style={image_container_style}>
+                  <img style={image_style} src={aws} />
+                </div>
+                <div style={image_container_style}>
+                  <img style={image_style} src={mysql} />
+                </div>
               </div>
             </div>
           </div>
@@ -92,7 +144,9 @@ class Home extends Component {
         {/* <div className="home_about_title">ABOUT</div> */}
 
         <div className="home_project_title">PROJECT</div>
-        <div className="home_project_subtitle">저는 주로 리액트를 사용합니다.</div>
+        <div className="home_project_subtitle">
+          저는 주로 리액트를 사용합니다.
+        </div>
         <div className="home_project_container">
           <div className="home_project_item">
             <div className="home_project_item_desc">
@@ -139,9 +193,7 @@ class Home extends Component {
             <div className="home_project_item_desc">
               <div style={project_item_desc_style}>NONE</div>없음
             </div>
-            <div className="home_project_item_desc2">
-              #NONE #없음
-            </div>
+            <div className="home_project_item_desc2">#NONE #없음</div>
             <img
               className="project_image"
               src={project_image}
