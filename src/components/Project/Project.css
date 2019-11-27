@@ -1,0 +1,12 @@
+.project_container {
+
+}
+.project_video_container {
+    margin-top: 80px;
+    width: 80vw;
+    overflow: hidden;
+    padding: 100px;
+}
+.project_video {
+    width: 80%;
+}
