@@ -44,3 +44,50 @@
 body {
   width: 100vw;
 }
+.sidebar {
+  position: fixed;
+  width: 25vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  right: -25vw;
+  z-index: 5;
+  transition: 0.35s;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar_title {
+  margin-top: 80px;
+  font-family: "Titillium Web", "san-selif";
+  font-weight: 900;
+  align-self: center;
+  font-size: 40px;
+  padding-top: 40px;
+}
+.sidebar_list {
+  font-family: "escore9";
+  color: rgb(153, 153, 153);
+  font-size: 20px;
+  text-decoration: underline;
+}
+.sidebar_list > li {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+@media (max-width: 770px) {
+  .sidebar {
+    width: 50vw;
+    right: -50vw;
+  }
+  .sidebar_title {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  .sidebar_list {
+    font-size: 10px;
+  }
+  .sidebar_list > li {
+    margin-bottom: 20px;
+  }
+}

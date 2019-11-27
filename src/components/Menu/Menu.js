@@ -4,7 +4,6 @@ import logo from "./logo1.png";
 import menu_button from "./menu_button.png";
 
 class Menu extends Component {
-
   componentDidMount() {
     window.addEventListener("scroll", this.onScroll);
   }
@@ -14,7 +13,7 @@ class Menu extends Component {
     const menu_now_name = document.getElementsByClassName("menu_now_name");
     if (scrollTop > window.innerHeight - 200 && now_contents === "HOME") {
       menu_now_name[0].innerHTML = "HELLO!";
-    } else if(now_contents === "HOME") {
+    } else if (now_contents === "HOME") {
       menu_now_name[0].innerHTML = "HOME";
     }
   };
@@ -46,7 +45,9 @@ class Menu extends Component {
           <span className="menu_now_name">{now_contents}</span>
           <span style={emoji_style}>&nbsp;&nbsp;🚀</span>
         </div>
-        <div className="menu_menu">
+        <div className="menu_menu" onClick={()=>{
+          this.props.onToggle("iamsidebarbutton");
+        }}>
           <img style={logo_style} src={menu_button} />
         </div>
       </div>
