@@ -88,14 +88,20 @@ class Home extends Component {
         <div className="home_about_container">
           <div className="home_about_desc">
             <div className="home_about_desc_head wow fadeInUp">안녕하세요</div>
-            <div className="home_about_desc_body wow fadeInUp" data-wow-delay="0.1s">
+            <div
+              className="home_about_desc_body wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
               저는 제주도에서 태어나 현재는 수원에 거주하고 있는 프론트엔드
               개발자 지망생 김태은입니다. 대학교에서 인터렉션 디자인과
               프로그래밍 수업을 듣고 흥미를 느껴 개발 공부를 시작하게
               되었습니다.
             </div>
-            <div className="home_about_desc_foot wow fadeInUp" data-wow-delay="0.2s">
-              <div className="home_about_desc_foot_sns" >
+            <div
+              className="home_about_desc_foot wow fadeInUp"
+              data-wow-delay="0.2s"
+            >
+              <div className="home_about_desc_foot_sns">
                 <a
                   style={image_container_style}
                   href="https://github.com/taenykim"
@@ -146,10 +152,10 @@ class Home extends Component {
               </div>
             </div>
           </div>
-          <img className="home_about_image wow fadeInUp" data-wow-delay="0.3s" src={about} />
+          <img className="home_about_image wow fadeInUp" src={about} />
         </div>
-        <div className="home_project_title wow fadeInDown" data-wow-delay="0.4s">PROJECT</div>
-        <div className="home_project_subtitle wow fadeInUp" data-wow-delay="0.5s">
+        <div className="home_project_title wow fadeInDown">PROJECT</div>
+        <div className="home_project_subtitle wow fadeInUp">
           저는 주로 리액트를 사용합니다.
         </div>
         <div className="home_project_container">
