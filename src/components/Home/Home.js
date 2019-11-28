@@ -151,8 +151,8 @@ class Home extends Component {
         <div className="home_project_container">
           <div className="home_project_item">
             <div className="home_project_item_desc">
-              <div style={project_item_desc_style}>Fashub</div>패션정보 공유
-              웹사이트
+              <div style={project_item_desc_style}>FASHUB</div>
+              패션정보 공유 웹사이트
             </div>
             <div className="home_project_item_desc2">
               #react #nodeJS #mySQL #AWS #반응형
@@ -165,8 +165,8 @@ class Home extends Component {
           </div>
           <div className="home_project_item">
             <div className="home_project_item_desc">
-              <div style={project_item_desc_style}>Crawling App</div>크롤링
-              사이트
+              <div style={project_item_desc_style}>크롤링 사이트</div>
+              배경화면 크롤링 사이트
             </div>
             <div className="home_project_item_desc2">
               #react #nodeJS #searching #crawling #반응형
@@ -179,7 +179,8 @@ class Home extends Component {
           </div>
           <div className="home_project_item">
             <div className="home_project_item_desc">
-              <div style={project_item_desc_style}>React Native</div>현장실습
+              <div style={project_item_desc_style}>이러닝 APP</div>
+              현장실습
             </div>
             <div className="home_project_item_desc2">
               #react #native #nodeJS #반응형
@@ -192,7 +193,8 @@ class Home extends Component {
           </div>
           <div className="home_project_item">
             <div className="home_project_item_desc">
-              <div style={project_item_desc_style}>NONE</div>없음
+              <div style={project_item_desc_style}>NONE</div>
+              없음
             </div>
             <div className="home_project_item_desc2">#NONE #없음</div>
             <img

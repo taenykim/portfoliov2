@@ -19,12 +19,12 @@ class App extends Component {
     if (this.state.toggle_sidebar === true) {
       sidebar[0].style = "right:-100vw";
       this.setState({
-        toggle_sidebar: false,
+        toggle_sidebar: false
       });
     } else if (side === "iamsidebarbutton") {
       sidebar[0].style = "right:0";
       this.setState({
-        toggle_sidebar: true,
+        toggle_sidebar: true
       });
     }
   };
@@ -40,9 +40,10 @@ class App extends Component {
                   now_contents: "PROJECT1"
                 });
                 this.handleToggle();
+                document.getElementById("root").scrollIntoView();
               }}
             >
-              PROJECT1
+              FASHUB
             </li>
             <li
               onClick={() => {
@@ -50,9 +51,10 @@ class App extends Component {
                   now_contents: "PROJECT2"
                 });
                 this.handleToggle();
+                document.getElementById("root").scrollIntoView();
               }}
             >
-              PROJECT2
+              크롤링 사이트
             </li>
             <li
               onClick={() => {
@@ -60,9 +62,10 @@ class App extends Component {
                   now_contents: "PROJECT3"
                 });
                 this.handleToggle();
+                document.getElementById("root").scrollIntoView();
               }}
             >
-              PROJECT3
+              교육용 APP
             </li>
             <li
               onClick={() => {
@@ -70,9 +73,10 @@ class App extends Component {
                   now_contents: "PROJECT4"
                 });
                 this.handleToggle();
+                document.getElementById("root").scrollIntoView();
               }}
             >
-              PROJECT4
+              NONE
             </li>
           </ul>
         </div>

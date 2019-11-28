@@ -9,6 +9,7 @@
   background: white;
   top: 0;
   box-shadow: 1px 1px black;
+  position: relative;
 }
 .menu_home {
   margin-left: 40px;

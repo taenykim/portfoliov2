@@ -5,6 +5,9 @@ import menu_button from "./menu_button.png";
 import x_button from "./x_button.png";
 
 class Menu extends Component {
+  state = {
+    now_menu: ["FASHUB", "크롤링 사이트", "이러닝 APP", "NONE"]
+  };
   componentDidMount() {
     window.addEventListener("scroll", this.onScroll);
   }
@@ -25,6 +28,7 @@ class Menu extends Component {
       document.getElementById("root").scrollIntoView();
     } else {
       onUpdate("HOME");
+      document.getElementById("root").scrollIntoView();
     }
   };
   render() {
@@ -43,7 +47,11 @@ class Menu extends Component {
         </div>
         <div className="menu_now">
           <span style={emoji_style}>🚀&nbsp;&nbsp;</span>
-          <span className="menu_now_name">{this.props.toggle_sidebar?("MENU"):(now_contents)}</span>
+          <span className="menu_now_name">
+            {this.props.toggle_sidebar
+              ? "MENU"
+              : now_contents}
+          </span>
           <span style={emoji_style}>&nbsp;&nbsp;🚀</span>
         </div>
         <div
@@ -52,8 +60,16 @@ class Menu extends Component {
             this.props.onToggle("iamsidebarbutton");
           }}
         >
-          {!this.props.toggle_sidebar && ( <img className="menu_menu_img" style={logo_style} src={menu_button} />)}
-          {this.props.toggle_sidebar && ( <img className="menu_menu_img" style={logo_style} src={x_button} />)}         
+          {!this.props.toggle_sidebar && (
+            <img
+              className="menu_menu_img"
+              style={logo_style}
+              src={menu_button}
+            />
+          )}
+          {this.props.toggle_sidebar && (
+            <img className="menu_menu_img" style={logo_style} src={x_button} />
+          )}
         </div>
       </div>
     );
