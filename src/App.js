@@ -4,6 +4,7 @@ import Menu from "./components/Menu/Menu";
 import Home from "./components/Home/Home";
 import Project from "./components/Project/Project";
 import "./animate.css";
+import WOW from "wow.js";
 
 class App extends Component {
   state = {
@@ -29,6 +30,12 @@ class App extends Component {
       });
     }
   };
+
+  componentDidMount() {
+    const wow = new WOW();
+    wow.init();
+  }
+
   render() {
     return (
       <Fragment>

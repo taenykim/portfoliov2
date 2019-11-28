@@ -32,10 +32,10 @@ class Project extends Component {
           />
         </div>
         <div className="project_first_container">
-          <div className="project_first_title">
+          <div className="project_first_title wow fadeInUp">
             {this.state.project_info[index].title}
           </div>
-          <div className="project_first_subtitle">
+          <div className="project_first_subtitle wow fadeInDown">
             {this.state.project_info[index].sub}
           </div>
         </div>

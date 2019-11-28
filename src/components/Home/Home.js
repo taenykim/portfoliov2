@@ -17,6 +17,7 @@ import project_image2 from "./background1.jpg";
 import project_image3 from "./background2.jpg";
 import project_image4 from "./background3.jpg";
 import project_image from "./1.jpg";
+import profile from "./profile.jpg";
 
 class Home extends Component {
   state = {
@@ -69,11 +70,14 @@ class Home extends Component {
       <div className="home_container" id="Home">
         <div className="home_first_container">
           <div className="home_first_title">
-            <div>
-              Front-end<div className="home_first_container_br"></div> Developer
+            <div className="wow fadeInUp">
+              Front-end&nbsp;
+              <div className="home_first_container_br"></div>
+              Developer
             </div>
-            <div>
-              Kim Taeeun's <div className="home_first_container_br"></div>
+            <div className="wow fadeInUp" data-wow-delay="0.2s">
+              Kim Taeeun's&nbsp;
+              <div className="home_first_container_br"></div>
               Portfolio v.2
             </div>
           </div>
@@ -83,15 +87,15 @@ class Home extends Component {
         </div>
         <div className="home_about_container">
           <div className="home_about_desc">
-            <div className="home_about_desc_head">안녕하세요</div>
-            <div className="home_about_desc_body">
+            <div className="home_about_desc_head wow fadeInUp">안녕하세요</div>
+            <div className="home_about_desc_body wow fadeInUp" data-wow-delay="0.1s">
               저는 제주도에서 태어나 현재는 수원에 거주하고 있는 프론트엔드
               개발자 지망생 김태은입니다. 대학교에서 인터렉션 디자인과
               프로그래밍 수업을 듣고 흥미를 느껴 개발 공부를 시작하게
               되었습니다.
             </div>
-            <div className="home_about_desc_foot">
-              <div className="home_about_desc_foot_sns">
+            <div className="home_about_desc_foot wow fadeInUp" data-wow-delay="0.2s">
+              <div className="home_about_desc_foot_sns" >
                 <a
                   style={image_container_style}
                   href="https://github.com/taenykim"
@@ -142,14 +146,14 @@ class Home extends Component {
               </div>
             </div>
           </div>
-          <img className="home_about_image" src={about} />
+          <img className="home_about_image wow fadeInUp" data-wow-delay="0.3s" src={about} />
         </div>
-        <div className="home_project_title">PROJECT</div>
-        <div className="home_project_subtitle">
+        <div className="home_project_title wow fadeInDown" data-wow-delay="0.4s">PROJECT</div>
+        <div className="home_project_subtitle wow fadeInUp" data-wow-delay="0.5s">
           저는 주로 리액트를 사용합니다.
         </div>
         <div className="home_project_container">
-          <div className="home_project_item">
+          <div className="home_project_item wow fadeInUp">
             <div className="home_project_item_desc">
               <div style={project_item_desc_style}>FASHUB</div>
               패션정보 공유 웹사이트
@@ -163,7 +167,7 @@ class Home extends Component {
               onClick={this.updateContents1}
             />
           </div>
-          <div className="home_project_item">
+          <div className="home_project_item wow fadeInUp">
             <div className="home_project_item_desc">
               <div style={project_item_desc_style}>크롤링 사이트</div>
               배경화면 크롤링 사이트
@@ -177,7 +181,7 @@ class Home extends Component {
               onClick={this.updateContents2}
             />
           </div>
-          <div className="home_project_item">
+          <div className="home_project_item wow fadeInUp">
             <div className="home_project_item_desc">
               <div style={project_item_desc_style}>이러닝 APP</div>
               현장실습
@@ -191,7 +195,7 @@ class Home extends Component {
               onClick={this.updateContents3}
             />
           </div>
-          <div className="home_project_item">
+          <div className="home_project_item wow fadeInUp">
             <div className="home_project_item_desc">
               <div style={project_item_desc_style}>NONE</div>
               없음
