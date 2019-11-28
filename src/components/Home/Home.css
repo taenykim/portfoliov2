@@ -40,17 +40,6 @@
   padding-bottom: 20px;
   /* background: rgb(227, 173, 248); */
 }
-.home_about_title {
-  background: rgb(152, 129, 194);
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  font-family: "Titillium Web", "san-selif";
-  color: white;
-  font-weight: 900;
-  font-size: 4px;
-  letter-spacing: 2px;
-}
 .home_about_desc {
   position: relative;
   width: 400px;
@@ -200,6 +189,7 @@
   }
   .home_about_desc {
     width: 600px;
+    height: auto;
   }
   .home_about_container {
     flex-direction: column;
@@ -212,9 +202,6 @@
     width: 60vw;
     height: 34vw;
     cursor: pointer;
-  }
-  .home_about_desc {
-    height: auto;
   }
   .home_about_desc_foot_skills {
     margin-right: 0;

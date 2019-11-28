@@ -77,7 +77,6 @@ class Home extends Component {
             본 사이트는 리액트로 만들었습니다.
           </div>
         </div>
-        {/* <div className="home_about_title">ABOUT</div> */}
         <div className="home_about_container">
           <div className="home_about_desc">
             <div className="home_about_desc_head">안녕하세요</div>
@@ -141,8 +140,6 @@ class Home extends Component {
           </div>
           <img className="home_about_image" src={about} />
         </div>
-        {/* <div className="home_about_title">ABOUT</div> */}
-
         <div className="home_project_title">PROJECT</div>
         <div className="home_project_subtitle">
           저는 주로 리액트를 사용합니다.
