@@ -73,7 +73,7 @@ class App extends Component {
                 document.getElementById("root").scrollIntoView();
               }}
             >
-              교육용 APP
+              이러닝 APP
             </li>
             <li
               onClick={() => {
