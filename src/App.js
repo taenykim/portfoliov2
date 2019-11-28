@@ -3,6 +3,7 @@ import "./App.css";
 import Menu from "./components/Menu/Menu";
 import Home from "./components/Home/Home";
 import Project from "./components/Project/Project";
+import "./animate.css";
 
 class App extends Component {
   state = {
