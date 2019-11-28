@@ -41,7 +41,7 @@ class App extends Component {
       <Fragment>
         <div className="sidebar">
           <div className="sidebar_title">MENU</div>
-          <ul className="sidebar_list">
+          <ol className="sidebar_list">
             <li
               onClick={() => {
                 this.setState({
@@ -86,7 +86,7 @@ class App extends Component {
             >
               NONE
             </li>
-          </ul>
+          </ol>
         </div>
         <div className="full_container" onClick={this.handleToggle}>
           <Menu
