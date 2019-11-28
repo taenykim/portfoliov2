@@ -78,12 +78,14 @@
   margin-top: 20px;
   margin-bottom: 10px;
   padding-left: 40px;
+  padding-right: 40px;
 }
 .project_about_desc_body {
   font-family: "escore4";
   font-size: 15px;
   line-height: 30px;
   padding-left: 40px;
+  padding-right: 40px;
 }
 .project_second_head {
   color: black;
