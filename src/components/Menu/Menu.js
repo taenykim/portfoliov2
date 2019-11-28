@@ -22,7 +22,7 @@ class Menu extends Component {
     const { now_contents, onUpdate } = this.props;
 
     if (now_contents === "HOME") {
-      document.getElementById("Home").scrollIntoView();
+      document.getElementById("root").scrollIntoView();
     } else {
       onUpdate("HOME");
     }

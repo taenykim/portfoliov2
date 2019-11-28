@@ -26,21 +26,25 @@ class Home extends Component {
   updateContents1 = () => {
     const { onUpdate } = this.props;
     onUpdate("PROJECT1");
+    document.getElementById("root").scrollIntoView();
   };
 
   updateContents2 = () => {
     const { onUpdate } = this.props;
     onUpdate("PROJECT2");
+    document.getElementById("root").scrollIntoView();
   };
 
   updateContents3 = () => {
     const { onUpdate } = this.props;
     onUpdate("PROJECT3");
+    document.getElementById("root").scrollIntoView();
   };
 
   updateContents4 = () => {
     const { onUpdate } = this.props;
     onUpdate("PROJECT4");
+    document.getElementById("root").scrollIntoView();
   };
 
   render() {
@@ -197,9 +201,6 @@ class Home extends Component {
               onClick={this.updateContents4}
             />
           </div>
-        </div>
-        <div className="home_foot_container">
-          <div>💌 kimtaeeeny@gmail.com</div>
         </div>
       </div>
     );

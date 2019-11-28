@@ -58,6 +58,40 @@
   line-height: 30px;
   padding-left: 40px;
 }
+.project_second_head {
+  color: black;
+  font-family: "escore9";
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-decoration: 6px underline;
+  padding-bottom: 40px;
+  padding-top: 10px;
+  border-top: 4px solid black;
+}
+.project_second_body {
+  font-family: "escore4";
+  font-size: 15px;
+  line-height: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.project_second_link{
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  align-self: flex-end;
+  padding-right: 40px;
+}
+.project_second_link > div{
+  font-family: "escore5";
+  color: white;
+  background: black;
+  margin: 4px;
+  padding: 10px;
+  cursor: pointer;
+
+}
 @media (max-width: 1070px) {
   .project_about_desc {
     width: 600px;

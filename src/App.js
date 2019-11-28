@@ -93,6 +93,9 @@ class App extends Component {
             <Project now_contents={this.state.now_contents} />
           )}
         </div>
+        <div className="home_foot_container">
+          <div>💌 kimtaeeeny@gmail.com</div>
+        </div>
       </Fragment>
     );
   }
