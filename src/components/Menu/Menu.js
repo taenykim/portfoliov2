@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./Menu.css";
-import logo from "./logo1.png";
-import menu_button from "./menu_button.png";
-import x_button from "./x_button.png";
+import logo from "./images/logo1.png";
+import menu_button from "./images/menu_button.png";
+import x_button from "./images/x_button.png";
 
 class Menu extends Component {
   state = {

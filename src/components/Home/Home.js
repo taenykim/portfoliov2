@@ -1,23 +1,22 @@
 import React, { Component } from "react";
 import "./Home.css";
-import about from "./12.jpg";
-import velog from "./velog.png";
-import github from "./github.png";
-import insta from "./insta.png";
-import react from "./react.png";
-import html from "./html5.png";
-import css from "./css3.png";
-import js from "./javascript.svg";
-import nodejs from "./nodejs.png";
-import jquery from "./jquery.png";
-import sass from "./sass.png";
-import aws from "./aws.png";
-import mysql from "./mysql.png";
-import project_image2 from "./background1.jpg";
-import project_image3 from "./background2.jpg";
-import project_image4 from "./background3.jpg";
-import project_image from "./1.jpg";
-import profile from "./profile.jpg";
+import about from "./images/profile_image.jpg";
+import project_image1 from "./images/FASHUB.png";
+import project_image2 from "./images/크롤링 사이트.jpg";
+import project_image3 from "./images/이러닝 APP.jpg";
+import project_image4 from "./images/NONE.jpg";
+import velog from "./skills_logo/velog.png";
+import github from "./skills_logo/github.png";
+import insta from "./skills_logo/insta.png";
+import react from "./skills_logo/react.png";
+import html from "./skills_logo/html5.png";
+import css from "./skills_logo/css3.png";
+import js from "./skills_logo/javascript.svg";
+import nodejs from "./skills_logo/nodejs.png";
+import jquery from "./skills_logo/jquery.png";
+import sass from "./skills_logo/sass.png";
+import aws from "./skills_logo/aws.png";
+import mysql from "./skills_logo/mysql.png";
 
 class Home extends Component {
   state = {
@@ -92,10 +91,9 @@ class Home extends Component {
               className="home_about_desc_body wow fadeInUp"
               data-wow-delay="0.1s"
             >
-              저는 제주도에서 태어나 현재는 수원에 거주하고 있는 프론트엔드
-              개발자 지망생 김태은입니다. 대학교에서 인터렉션 디자인과
+              저는 프론트엔드 개발자 김태은입니다. 대학교에서 인터렉션 디자인과
               프로그래밍 수업을 듣고 흥미를 느껴 개발 공부를 시작하게
-              되었습니다.
+              되었고, 디자인과 서버를 잘 이해하는 프론트엔드 개발자가 되는 것이 목표입니다.
             </div>
             <div
               className="home_about_desc_foot wow fadeInUp"
@@ -169,7 +167,7 @@ class Home extends Component {
             </div>
             <img
               className="project_image"
-              src={project_image}
+              src={project_image1}
               onClick={this.updateContents1}
             />
           </div>
