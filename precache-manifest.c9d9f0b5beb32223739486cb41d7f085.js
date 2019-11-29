@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c28840b7b9743683bcfd342806ef8015",
+    "revision": "ef0d5ef833a48db8fa951da5b1720500",
     "url": "/portfoliov2/index.html"
   },
   {
-    "revision": "ec2358d1084cc22a0414",
-    "url": "/portfoliov2/static/css/main.e1e10b6f.chunk.css"
+    "revision": "ce005caf19a9e9b4f149",
+    "url": "/portfoliov2/static/css/main.b180f6e6.chunk.css"
   },
   {
-    "revision": "fd607679d1e7a4e30f63",
-    "url": "/portfoliov2/static/js/2.c1f02cbb.chunk.js"
+    "revision": "3e7bb9bd58a01be23d62",
+    "url": "/portfoliov2/static/js/2.c4e841b2.chunk.js"
   },
   {
-    "revision": "ec2358d1084cc22a0414",
-    "url": "/portfoliov2/static/js/main.044afb23.chunk.js"
+    "revision": "ce005caf19a9e9b4f149",
+    "url": "/portfoliov2/static/js/main.b084e5ed.chunk.js"
   },
   {
     "revision": "878549ee2bcf80f7514a",
     "url": "/portfoliov2/static/js/runtime-main.461aeb6f.js"
   },
   {
-    "revision": "cbaa80ab5067c060c4c07fde7dfc4e4e",
-    "url": "/portfoliov2/static/media/1.cbaa80ab.jpg"
+    "revision": "01fccc12b079e147dd9ff5e290324848",
+    "url": "/portfoliov2/static/media/FASHUB.01fccc12.png"
   },
   {
-    "revision": "7d11b0addf784c4570f605e1390e1ad4",
-    "url": "/portfoliov2/static/media/12.7d11b0ad.jpg"
+    "revision": "168b0b9046e2aab29dcbb1293de5ee7f",
+    "url": "/portfoliov2/static/media/NONE.168b0b90.jpg"
   },
   {
     "revision": "47fb61abeca56faf941a28a022b31f7d",
@@ -68,18 +68,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfoliov2/static/media/background.79437988.jpg"
   },
   {
-    "revision": "21b530d2456b44507c793d457f87bf74",
-    "url": "/portfoliov2/static/media/background1.21b530d2.jpg"
-  },
-  {
-    "revision": "f8091367fec031707a47198950911da4",
-    "url": "/portfoliov2/static/media/background2.f8091367.jpg"
-  },
-  {
-    "revision": "168b0b9046e2aab29dcbb1293de5ee7f",
-    "url": "/portfoliov2/static/media/background3.168b0b90.jpg"
-  },
-  {
     "revision": "d7c53238a4ed26646e622cb63f022884",
     "url": "/portfoliov2/static/media/css3.d7c53238.png"
   },
@@ -104,6 +92,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfoliov2/static/media/logo1.988cf48a.png"
   },
   {
+    "revision": "01fccc12b079e147dd9ff5e290324848",
+    "url": "/portfoliov2/static/media/main.01fccc12.png"
+  },
+  {
+    "revision": "168b0b9046e2aab29dcbb1293de5ee7f",
+    "url": "/portfoliov2/static/media/main.168b0b90.jpg"
+  },
+  {
+    "revision": "21b530d2456b44507c793d457f87bf74",
+    "url": "/portfoliov2/static/media/main.21b530d2.jpg"
+  },
+  {
+    "revision": "f8091367fec031707a47198950911da4",
+    "url": "/portfoliov2/static/media/main.f8091367.jpg"
+  },
+  {
     "revision": "160f78caf8759a2bf3f91d4c021dcade",
     "url": "/portfoliov2/static/media/menu_button.160f78ca.png"
   },
@@ -116,8 +120,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfoliov2/static/media/nodejs.6dcf6999.png"
   },
   {
-    "revision": "f54d4612365cd82a844d55c25bca2b1e",
-    "url": "/portfoliov2/static/media/profile.f54d4612.jpg"
+    "revision": "7d11b0addf784c4570f605e1390e1ad4",
+    "url": "/portfoliov2/static/media/profile_image.7d11b0ad.jpg"
   },
   {
     "revision": "47ce6e77f039020ee2e76a10c1e988e9",
@@ -126,5 +130,13 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6314878e31a67c508473cf95db1abaf8",
     "url": "/portfoliov2/static/media/x_button.6314878e.png"
+  },
+  {
+    "revision": "f8091367fec031707a47198950911da4",
+    "url": "/portfoliov2/static/media/이러닝 APP.f8091367.jpg"
+  },
+  {
+    "revision": "21b530d2456b44507c793d457f87bf74",
+    "url": "/portfoliov2/static/media/크롤링 사이트.21b530d2.jpg"
   }
 ]);
