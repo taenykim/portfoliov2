@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Home.css";
 import about from "./images/profile_image.jpg";
-import project_image1 from "./images/FASHUB.png";
+import project_image1 from "./images/FASHUB.jpg";
 import project_image2 from "./images/크롤링 사이트.jpg";
 import project_image3 from "./images/이러닝 APP.jpg";
 import project_image4 from "./images/NONE.jpg";

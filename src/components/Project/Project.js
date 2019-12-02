@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Project.css";
-import pj1_main from "./pj1/main.png";
+import pj1_main from "./pj1/main.jpg";
 import pj2_main from "./pj2/main.jpg";
 import pj3_main from "./pj3/main.jpg";
 import pj4_main from "./pj4/main.jpg";
@@ -14,6 +14,8 @@ class Project extends Component {
         second_body:
           "대학교 프로젝트로 패션정보를 공유하는 사진 중심의 커뮤니티 사이트를 만들어보았습니다. 리액트를 이용해서 만든 첫번째 어플리케이션이다보니 코드의 재사용성, 성능보다는 구현에 집중하여 개발을 진행하였습니다. 이 프로젝트를 통해 웹 퍼블리싱, 프론트개발, 백엔드 서버 구축 등 전반적인 웹 어플리케이션 제작과정을 경험하게 되었습니다.",
         img: pj1_main,
+        visit_link: "http://13.209.207.140:3000",
+        github_link: "https://github.com/msmk530/opinion",
         desc: [
           {
             no: 1,
@@ -32,7 +34,7 @@ class Project extends Component {
             img: pj3_main,
             title: "뭐라도",
             desc: "써야지 써야지!!"
-          },
+          }
         ]
       },
       {
@@ -74,8 +76,10 @@ class Project extends Component {
             {this.state.project_info[index].second_body}
           </div>
           <div className="project_second_link">
-            <div>Visit Site</div>
-            <div>Github Link</div>
+            <a href={this.state.project_info[0].visit_link} target="_blank">Visit Site</a>
+            <a href={this.state.project_info[0].github_link} target="_blank">
+              Github Link
+            </a>
           </div>
         </div>
         <div className="project_about_container">

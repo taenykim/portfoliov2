@@ -118,7 +118,7 @@
   padding-right: 20vw;
 
 }
-.project_second_link > div {
+.project_second_link > a {
   font-family: "escore5";
   color: white;
   background: black;
