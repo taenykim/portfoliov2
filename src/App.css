@@ -76,6 +76,7 @@ body {
 .sidebar_list > li {
   cursor: pointer;
   margin-bottom: 10px;
+  width: fit-content;
 }
 @media (max-width: 1070px) {
   .sidebar {

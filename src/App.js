@@ -14,6 +14,12 @@ import fashub2 from "./components/Project/pj1/fashub2.png";
 import fashub3 from "./components/Project/pj1/fashub3.png";
 import fashub4 from "./components/Project/pj1/fashub4.png";
 import fashub5 from "./components/Project/pj1/fashub5.png";
+import portfolio1 from "./components/Project/pj2/portfolio1.png";
+import portfolio2 from "./components/Project/pj2/portfolio2.png";
+import portfolio3 from "./components/Project/pj2/portfolio3.png";
+import portfolio4 from "./components/Project/pj2/portfolio4.png";
+import portfolio5 from "./components/Project/pj2/portfolio5.png";
+import portfolio6 from "./components/Project/pj2/portfolio6.png";
 
 class App extends Component {
   state = {
@@ -25,9 +31,9 @@ class App extends Component {
         title: "FASHUB",
         sub: "패션정보 공유 웹사이트",
         tag: "#react #nodeJS #mySQL #AWS #반응형",
+        img: pj1_main,
         second_body:
           "대학교 프로젝트로 패션정보를 공유하는 사진 중심의 커뮤니티 사이트를 만들어보았습니다. 리액트를 이용해서 만든 첫번째 어플리케이션이다보니 코드의 재사용성, 성능보다는 구현에 집중하여 개발을 진행하였습니다. 이 프로젝트를 통해 웹 퍼블리싱, 프론트개발, 백엔드 서버 구축 등 전반적인 웹 어플리케이션 제작과정을 경험하게 되었습니다.",
-        img: pj1_main,
         visit_link: "http://13.209.207.140:3000",
         github_link: "https://github.com/msmk530/opinion",
         desc: [
@@ -74,7 +80,54 @@ class App extends Component {
         sub: "포트폴리오 사이트 v2",
         tag: "#react #nodeJS #mySQL #AWS #반응형",
         img: pj2_main,
-        desc: []
+        second_body:
+          "포트폴리오 사이트입니다. 정적인 페이지로 제가 작업한 것들을 보기좋게 보여주기 위해서 만들었습니다. 템플릿 없이 create-react-app 으로 html, css, 로직 모두 하나부터 열까지 직접 만들어보려고 하였고 레이아웃과 코드 재사용성 위주를 신경써서 제작해보았습니다.",
+        visit_link: "https://taenykim.github.io/portfoliov2/",
+        github_link: "https://github.com/taenykim/portfoliov2",
+        desc: [
+          {
+            no: 1,
+            img: portfolio1,
+            title: "메인페이지",
+            desc:
+              "전체적인 페이지의 구성은 HOME, PROJECT 두개의 섹션이 있으며, 상단에 좌우에 홈버튼과 메뉴버튼을 위치시켰고 중앙에는 현재 보이고있는 컨텐츠의 TITLE을 보여주고자 하였습니다. css는 주로 flex box를 사용하였고, 애니메이션은 wow.js와 animate.css를 이용해보았습니다."
+          },
+          {
+            no: 2,
+            img: portfolio2,
+            title: "state 공유",
+            desc:
+              "한 곳의 정보를 수정하였을 때 각각의 컴포넌트(HOME, PROJECT)의 정보가 모두 수정되게끔 정보들을 APP.js 파일의 state 안에 위치하였고 props를 통하여 정보를 공유하게끔 설정하였습니다."
+          },
+          {
+            no: 3,
+            img: portfolio3,
+            title: "코드반복x",
+            desc:
+              "반복적으로 사용되는 태그들은 모두 map 함수를 통해서 정리하였습니다."
+          },
+          {
+            no: 4,
+            img: portfolio4,
+            title: "사이드 바",
+            desc:
+              "메뉴버튼을 누르면 나오는 사이드 바 또한 외부 라이브러리를 사용하지 않고 직접 구현해보았습니다. Toggle함수를 통해, 메뉴가 활성화 될때마다 오른쪽에서 slide해서 화면에 보여지게끔 만들었습니다."
+          },
+          {
+            no: 5,
+            img: portfolio5,
+            title: "이미지 사용",
+            desc:
+              "고정적으로 사용되는 이미지(메인화면의 배경화면 등)은 css의 background 속성을 통하여 설정하였고 가변적으로 변하는 이미지는 img 태그를 통해 조건에 따라 source를 불러오게끔 하였습니다."
+          },
+          {
+            no: 6,
+            img: portfolio6,
+            title: "반응형 디자인",
+            desc:
+              "전체적으로 flex wrap 속성을 넣어서 item들이 container 크기를 넘어갈 경우 자동 줄바꿈 되도록 하였고, 각 디바이스(desktop, pad, phone)에 맞는 디테일한 레이아웃 조정도 신경써보았습니다."
+          }
+        ]
       },
       {
         project_no: "PROJECT3",
@@ -154,9 +207,6 @@ class App extends Component {
               project_info={this.state.project_info}
               onUpdate={this.handleUpdate}
             />
-          )}
-          {this.state.now_contents === "MENU" && (
-            <Home onUpdate={this.handleUpdate} />
           )}
           {this.state.now_contents != "HOME" && (
             <Project
