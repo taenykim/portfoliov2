@@ -1,31 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dd55581464893990a7d0d0587e6c0b98",
+    "revision": "6150dcfb1bb2da50d5cf73c1080995ee",
     "url": "/portfoliov2/index.html"
   },
   {
-    "revision": "cee3192521692b0f3947",
-    "url": "/portfoliov2/static/css/main.d478dbea.chunk.css"
+    "revision": "78fe0427271d04497086",
+    "url": "/portfoliov2/static/css/main.a13f6d07.chunk.css"
   },
   {
-    "revision": "18367c595af720211bbe",
-    "url": "/portfoliov2/static/js/2.d92820d0.chunk.js"
+    "revision": "02cea64373df819dfb2d",
+    "url": "/portfoliov2/static/js/2.87b6adb1.chunk.js"
   },
   {
-    "revision": "cee3192521692b0f3947",
-    "url": "/portfoliov2/static/js/main.e8293ac8.chunk.js"
+    "revision": "78fe0427271d04497086",
+    "url": "/portfoliov2/static/js/main.0dc94ff7.chunk.js"
   },
   {
     "revision": "878549ee2bcf80f7514a",
     "url": "/portfoliov2/static/js/runtime-main.461aeb6f.js"
-  },
-  {
-    "revision": "197aaffa92fd26e0af604726df4f80b7",
-    "url": "/portfoliov2/static/media/FASHUB.197aaffa.jpg"
-  },
-  {
-    "revision": "168b0b9046e2aab29dcbb1293de5ee7f",
-    "url": "/portfoliov2/static/media/NONE.168b0b90.jpg"
   },
   {
     "revision": "47fb61abeca56faf941a28a022b31f7d",
@@ -150,13 +142,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6314878e31a67c508473cf95db1abaf8",
     "url": "/portfoliov2/static/media/x_button.6314878e.png"
-  },
-  {
-    "revision": "f8091367fec031707a47198950911da4",
-    "url": "/portfoliov2/static/media/이러닝 APP.f8091367.jpg"
-  },
-  {
-    "revision": "21b530d2456b44507c793d457f87bf74",
-    "url": "/portfoliov2/static/media/크롤링 사이트.21b530d2.jpg"
   }
 ]);
