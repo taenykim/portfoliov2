@@ -78,7 +78,7 @@ class App extends Component {
         project_no: "PROJECT2",
         title: "포트폴리오",
         sub: "포트폴리오 사이트 v2",
-        tag: "#react #nodeJS #mySQL #AWS #반응형",
+        tag: "#react #반응형",
         img: pj2_main,
         second_body:
           "포트폴리오 사이트입니다. 정적인 페이지로 제가 작업한 것들을 보기좋게 보여주기 위해서 만들었습니다. 템플릿 없이 create-react-app 으로 html, css, 로직 모두 하나부터 열까지 직접 만들어보려고 하였고 레이아웃과 코드 재사용성 위주를 신경써서 제작해보았습니다.",

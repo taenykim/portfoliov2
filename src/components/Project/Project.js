@@ -3,7 +3,7 @@ import "./Project.css";
 
 class Project extends Component {
   state = {
-    project_info : this.props.project_info
+    project_info: this.props.project_info
   };
   render() {
     const { now_contents } = this.props;
@@ -32,6 +32,9 @@ class Project extends Component {
           </div>
           <div className="project_second_body">
             {this.state.project_info[index].second_body}
+            <br />
+            <br />
+            {this.state.project_info[index].tag}
           </div>
           <div className="project_second_link">
             <a href={this.state.project_info[0].visit_link} target="_blank">
