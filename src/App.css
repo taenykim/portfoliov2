@@ -83,7 +83,7 @@ body {
     right: -50vw;
   }
   .sidebar_list {
-    font-size: 40px;
+    font-size: 20px;
   }
 }
 @media (max-width: 770px) {
@@ -93,9 +93,6 @@ body {
   }
   .sidebar_title {
     padding-bottom: 20px;
-  }
-  .sidebar_list {
-    font-size: 30px;
   }
   .sidebar_list > li {
     margin-bottom: 20px;

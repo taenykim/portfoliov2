@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 import "./Home.css";
 import about from "./images/profile_image.jpg";
-import project_image1 from "./images/FASHUB.jpg";
-import project_image2 from "./images/크롤링 사이트.jpg";
-import project_image3 from "./images/이러닝 APP.jpg";
-import project_image4 from "./images/NONE.jpg";
 import velog from "./skills_logo/velog.png";
 import github from "./skills_logo/github.png";
 import insta from "./skills_logo/insta.png";
@@ -20,31 +16,30 @@ import mysql from "./skills_logo/mysql.png";
 
 class Home extends Component {
   state = {
-    now_contents: "HOME"
-  };
-
-  updateContents1 = () => {
-    const { onUpdate } = this.props;
-    onUpdate("PROJECT1");
-    document.getElementById("root").scrollIntoView();
-  };
-
-  updateContents2 = () => {
-    const { onUpdate } = this.props;
-    onUpdate("PROJECT2");
-    document.getElementById("root").scrollIntoView();
-  };
-
-  updateContents3 = () => {
-    const { onUpdate } = this.props;
-    onUpdate("PROJECT3");
-    document.getElementById("root").scrollIntoView();
-  };
-
-  updateContents4 = () => {
-    const { onUpdate } = this.props;
-    onUpdate("PROJECT4");
-    document.getElementById("root").scrollIntoView();
+    now_contents: "HOME",
+    project_info: this.props.project_info,
+    about_info: {
+      sns: [
+        { title: "깃허브", img: github, link: "https://github.com/taenykim" },
+        { title: "블로그", img: velog, link: "https://velog.io/@kimtaeeeny" },
+        {
+          title: "인스타",
+          img: insta,
+          link: "https://www.instagram.com/kimtaeeeny2/"
+        }
+      ],
+      skills: [
+        { title: "리액트", img: react },
+        { title: "HTML", img: html },
+        { title: "CSS", img: css },
+        { title: "JS", img: js },
+        { title: "Jquery", img: jquery },
+        { title: "nodeJS", img: nodejs },
+        { title: "SASS", img: sass },
+        { title: "AWS", img: aws },
+        { title: "mySQL", img: mysql }
+      ]
+    }
   };
 
   render() {
@@ -92,61 +87,31 @@ class Home extends Component {
               data-wow-delay="0.1s"
             >
               저는 프론트엔드 개발자 김태은입니다. 대학교에서 인터렉션 디자인과
-              프로그래밍 수업을 듣고 흥미를 느껴 개발 공부를 시작하게
-              되었고, 디자인과 서버를 잘 이해하는 프론트엔드 개발자가 되는 것이 목표입니다.
+              프로그래밍 수업을 듣고 흥미를 느껴 개발 공부를 시작하게 되었고,
+              디자인과 서버를 잘 이해하는 프론트엔드 개발자가 되는 것이
+              목표입니다.
             </div>
             <div
               className="home_about_desc_foot wow fadeInUp"
               data-wow-delay="0.2s"
             >
               <div className="home_about_desc_foot_sns">
-                <a
-                  style={image_container_style}
-                  href="https://github.com/taenykim"
-                >
-                  <img style={image_style} src={github} />
-                </a>
-                <a
-                  style={image_container_style}
-                  href="https://velog.io/@kimtaeeeny"
-                >
-                  <img style={image_style} src={velog} />
-                </a>
-                <a
-                  style={image_container_style}
-                  href="https://www.instagram.com/kimtaeeeny2/"
-                >
-                  <img style={image_style} src={insta} />
-                </a>
+                {this.state.about_info.sns.map(list => {
+                  return (
+                    <a style={image_container_style} href={list.link}>
+                      <img style={image_style} src={list.img} />
+                    </a>
+                  );
+                })}
               </div>
               <div className="home_about_desc_foot_skills">
-                <div style={image_container_style}>
-                  <img style={image_style} src={react} />
-                </div>
-                <div style={image_container_style}>
-                  <img style={image_style} src={html} />
-                </div>
-                <div style={image_container_style}>
-                  <img style={image_style} src={css} />
-                </div>
-                <div style={image_container_style}>
-                  <img style={image_style} src={js} />
-                </div>
-                <div style={image_container_style}>
-                  <img style={image_style} src={jquery} />
-                </div>
-                <div style={image_container_style}>
-                  <img style={image_style} src={nodejs} />
-                </div>
-                <div style={image_container_style}>
-                  <img style={image_style} src={sass} />
-                </div>
-                <div style={image_container_style}>
-                  <img style={image_style} src={aws} />
-                </div>
-                <div style={image_container_style}>
-                  <img style={image_style} src={mysql} />
-                </div>
+                {this.state.about_info.skills.map(list => {
+                  return (
+                    <div style={image_container_style}>
+                      <img style={image_style} src={list.img} />
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -157,60 +122,26 @@ class Home extends Component {
           저는 주로 리액트를 사용합니다.
         </div>
         <div className="home_project_container">
-          <div className="home_project_item wow fadeInUp">
-            <div className="home_project_item_desc">
-              <div style={project_item_desc_style}>FASHUB</div>
-              패션정보 공유 웹사이트
-            </div>
-            <div className="home_project_item_desc2">
-              #react #nodeJS #mySQL #AWS #반응형
-            </div>
-            <img
-              className="project_image"
-              src={project_image1}
-              onClick={this.updateContents1}
-            />
-          </div>
-          <div className="home_project_item wow fadeInUp">
-            <div className="home_project_item_desc">
-              <div style={project_item_desc_style}>크롤링 사이트</div>
-              배경화면 크롤링 사이트
-            </div>
-            <div className="home_project_item_desc2">
-              #react #nodeJS #searching #crawling #반응형
-            </div>
-            <img
-              className="project_image"
-              src={project_image2}
-              onClick={this.updateContents2}
-            />
-          </div>
-          <div className="home_project_item wow fadeInUp">
-            <div className="home_project_item_desc">
-              <div style={project_item_desc_style}>이러닝 APP</div>
-              현장실습
-            </div>
-            <div className="home_project_item_desc2">
-              #react #native #nodeJS #반응형
-            </div>
-            <img
-              className="project_image"
-              src={project_image3}
-              onClick={this.updateContents3}
-            />
-          </div>
-          <div className="home_project_item wow fadeInUp">
-            <div className="home_project_item_desc">
-              <div style={project_item_desc_style}>NONE</div>
-              없음
-            </div>
-            <div className="home_project_item_desc2">#NONE #없음</div>
-            <img
-              className="project_image"
-              src={project_image4}
-              onClick={this.updateContents4}
-            />
-          </div>
+          {this.state.project_info.map(list => {
+            return (
+              <div className="home_project_item wow fadeInUp">
+                <div className="home_project_item_desc">
+                  <div style={project_item_desc_style}>{list.title}</div>
+                  {list.sub}
+                </div>
+                <div className="home_project_item_desc2">{list.tag}</div>
+                <img
+                  className="project_image"
+                  src={list.img}
+                  onClick={() => {
+                    const { onUpdate } = this.props;
+                    onUpdate(list.project_no);
+                    document.getElementById("root").scrollIntoView();
+                  }}
+                />
+              </div>
+            );
+          })}
         </div>
       </div>
     );
