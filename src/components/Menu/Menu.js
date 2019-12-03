@@ -5,9 +5,7 @@ import menu_button from "./images/menu_button.png";
 import x_button from "./images/x_button.png";
 
 class Menu extends Component {
-  state = {
-    now_menu: ["FASHUB", "크롤링 사이트", "이러닝 APP", "NONE"]
-  };
+
   componentDidMount() {
     window.addEventListener("scroll", this.onScroll);
   }
