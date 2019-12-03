@@ -37,10 +37,10 @@ class Project extends Component {
             {this.state.project_info[index].tag}
           </div>
           <div className="project_second_link">
-            <a href={this.state.project_info[0].visit_link} target="_blank">
+            <a href={this.state.project_info[index].visit_link} target="_blank">
               Visit Site
             </a>
-            <a href={this.state.project_info[0].github_link} target="_blank">
+            <a href={this.state.project_info[index].github_link} target="_blank">
               Github Link
             </a>
           </div>
