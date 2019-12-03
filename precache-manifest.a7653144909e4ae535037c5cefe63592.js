@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6150dcfb1bb2da50d5cf73c1080995ee",
+    "revision": "16cf3bec00a21456ec2cc7f79942d998",
     "url": "/portfoliov2/index.html"
   },
   {
-    "revision": "78fe0427271d04497086",
-    "url": "/portfoliov2/static/css/main.a13f6d07.chunk.css"
+    "revision": "c97995a9ddb32d0959a5",
+    "url": "/portfoliov2/static/css/main.43e4fc44.chunk.css"
   },
   {
-    "revision": "02cea64373df819dfb2d",
-    "url": "/portfoliov2/static/js/2.87b6adb1.chunk.js"
+    "revision": "88d5347154651125e411",
+    "url": "/portfoliov2/static/js/2.16109363.chunk.js"
   },
   {
-    "revision": "78fe0427271d04497086",
-    "url": "/portfoliov2/static/js/main.0dc94ff7.chunk.js"
+    "revision": "c97995a9ddb32d0959a5",
+    "url": "/portfoliov2/static/js/main.4d801b07.chunk.js"
   },
   {
     "revision": "878549ee2bcf80f7514a",
@@ -116,8 +116,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfoliov2/static/media/main.21b530d2.jpg"
   },
   {
-    "revision": "f8091367fec031707a47198950911da4",
-    "url": "/portfoliov2/static/media/main.f8091367.jpg"
+    "revision": "79437988b9d9cfbf25762fdb3ad1a677",
+    "url": "/portfoliov2/static/media/main.79437988.jpg"
   },
   {
     "revision": "160f78caf8759a2bf3f91d4c021dcade",
@@ -130,6 +130,30 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6dcf699938b2291d1634f91adb0dded1",
     "url": "/portfoliov2/static/media/nodejs.6dcf6999.png"
+  },
+  {
+    "revision": "8e6d8495a75ddc3ff1e277b232c96a2a",
+    "url": "/portfoliov2/static/media/portfolio1.8e6d8495.png"
+  },
+  {
+    "revision": "de7210b889266ff45546767275a81b26",
+    "url": "/portfoliov2/static/media/portfolio2.de7210b8.png"
+  },
+  {
+    "revision": "04d51e98cc42374464b41bd479982820",
+    "url": "/portfoliov2/static/media/portfolio3.04d51e98.png"
+  },
+  {
+    "revision": "20e988fefd8ee05d00740e82a5835058",
+    "url": "/portfoliov2/static/media/portfolio4.20e988fe.png"
+  },
+  {
+    "revision": "5358b3e9ceadd8c5d477909668f167a6",
+    "url": "/portfoliov2/static/media/portfolio5.5358b3e9.png"
+  },
+  {
+    "revision": "114e564bbee5723216c21ab2680804f3",
+    "url": "/portfoliov2/static/media/portfolio6.114e564b.png"
   },
   {
     "revision": "7d11b0addf784c4570f605e1390e1ad4",
