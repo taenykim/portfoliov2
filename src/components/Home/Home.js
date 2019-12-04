@@ -97,7 +97,7 @@ class Home extends Component {
               <div className="home_about_desc_foot_sns">
                 {this.state.about_info.sns.map(list => {
                   return (
-                    <a style={image_container_style} href={list.link}>
+                    <a style={image_container_style} href={list.link} target="_blank">
                       <img style={image_style} src={list.img} />
                     </a>
                   );
