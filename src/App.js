@@ -20,6 +20,13 @@ import portfolio3 from "./components/Project/pj2/portfolio3.png";
 import portfolio4 from "./components/Project/pj2/portfolio4.png";
 import portfolio5 from "./components/Project/pj2/portfolio5.png";
 import portfolio6 from "./components/Project/pj2/portfolio6.png";
+import wallpaperfinder1 from "./components/Project/pj3/wallpaperfinder1.png";
+import wallpaperfinder2 from "./components/Project/pj3/wallpaperfinder2.png";
+import wallpaperfinder3 from "./components/Project/pj3/wallpaperfinder3.png";
+import wallpaperfinder4 from "./components/Project/pj3/wallpaperfinder4.png";
+import wallpaperfinder5 from "./components/Project/pj3/wallpaperfinder5.png";
+import wallpaperfinder6 from "./components/Project/pj3/wallpaperfinder6.png";
+import wallpaperfinder7 from "./components/Project/pj3/wallpaperfinder7.png";
 
 class App extends Component {
   state = {
@@ -29,7 +36,7 @@ class App extends Component {
       {
         project_no: "PROJECT1",
         title: "FASHUB",
-        sub: "패션정보 공유 웹사이트",
+        sub: "패션정보 공유 웹어플리케이션",
         tag: "#react #nodeJS #mySQL #AWS #반응형",
         img: pj1_main,
         second_body:
@@ -70,7 +77,7 @@ class App extends Component {
             img: fashub2,
             title: "반응형 디자인",
             desc:
-              "디바이스의 종류에 맞게 레이아웃이 변하게끔 디자인하였습니다. 특히 스마트폰일 경우 카테고리 기능을 없애고 옷 정보등록 버튼을 우측 하단에 위치하였습니다. css @media 문법을 알기 전이라 js파일 내부에서 InnerWidth 값에 따라 다른 코드를 실행하게끔 구현하였습니다.ㅠ_ㅠ"
+              "디바이스의 종류에 맞게 레이아웃이 변하게끔 디자인하였습니다. 특히 스마트폰일 경우 카테고리 기능을 없애고 옷 정보등록 버튼을 우측 하단에 위치하였습니다. css @media 문법을 알기 전이라 js파일 내부에서 InnerWidth 값에 따라 다른 코드를 실행하게끔 구현하였습니다."
           }
         ]
       },
@@ -131,11 +138,63 @@ class App extends Component {
       },
       {
         project_no: "PROJECT3",
-        title: "크롤링 사이트",
+        title: "WALLPAPER FINDER",
         sub: "배경화면 크롤링 사이트",
-        tag: "#react #nodeJS #mySQL #AWS #반응형",
+        tag: "#react #cheerio #크롤링 #mansory #반응형",
         img: pj3_main,
-        desc: []
+        second_body:
+          "배경화면 크롤링 사이트입니다. alpacoders라는 대형 Wallpaper 사이트를 자주 이용하는 편인데 키워드를 검색했을 때, 30개씩 정보를 보여주고 다음페이지를 클릭해서 넘어가야지만 다음 정보를 가져오는데에 불편함을 느껴 키워드를 검색했을 때 한눈에 이미지들을 보면 좋을 것 같다는 생각에 웹사이트를 기획해보았습니다.",
+        visit_link: "https://taenykim.github.io/smartwallpaperfinder/",
+        github_link: "https://github.com/taenykim/smartwallpaperfinder",
+        desc: [
+          {
+            no: 1,
+            img: wallpaperfinder1,
+            title: "메인페이지",
+            desc:
+              '화면 중앙에 검색창과 우측상단에 해당 키워드의 이미지 개수와 현재 보여지는 이미지 개수정보, 하단에는 이미지 레이아웃 형태를 선택할 수 있는 3개의 버튼을 두었습니다. 검색창 하단에 "데스크탑 이용시 width를 1070이상을 유지"하라는 메시지를 적어놓았는데 밑에서 설명하도록 하겠습니다.'
+          },
+          {
+            no: 2,
+            img: wallpaperfinder2,
+            title: "결과 화면",
+            desc:
+              "captain america를 검색한 결과입니다. 이미지 레이아웃은 벽돌형(pinterest같은 형태) 레이아웃을 사용하고자 해서, Mansory 라이브러리를 사용하였습니다. 배경화면의 크기가 거의 일정해서 티는 안나지만 여러 형태의 이미지가 들어와도 잘 배치되게끔 설정하였습니다."
+          },
+          {
+            no: 3,
+            img: wallpaperfinder3,
+            title: "무한스크롤",
+            desc:
+              "검색키워드가 정보가 많을 경우도 있어서, 한꺼번에 모든 정보를 가져오는 방식이 아닌 스크롤을 밑으로 가져갔을 때, 데이터를 다시 리로드하는 무한스크롤 기능을 넣었습니다. 그리고 여기서 데이터를 가져오는 방식을 콜백함수를 통하여 구현하였는데 밑에서 설명해드리도록 하겠습니다."
+          },
+          {
+            no: 4,
+            img: wallpaperfinder4,
+            title: "비동기(1) 콜백함수",
+            desc:
+              "이번에 개발을 하면서 가장 막히고 이해하려고 애썼던 부분이 javascript의 비동기방식이었습니다. 해당 이미지는 검색어를 입력하였을 때 크롤링 코드를 실행시키는 부분인데, 검색어를 state로 넘겨준 후 크롤링 코드를 실행하게끔 setState부분에 콜백 함수를 넣어 구현하였습니다."
+          },
+          {
+            no: 5,
+            img: wallpaperfinder5,
+            title: "비동기(2) 요청,응답",
+            desc:
+              "무한스크롤이 발생하는 스크롤 이벤트 부분입니다. http 요청하는 부분과 json을 응답받는 부분을 콘솔창에 띄우는 코드를 작성해보았는데 요청,응답,요청,응답 순이 아닌 요청,요청,응답,응답 순의 비동기 방식을 볼 수 있었습니다. 그래서 마지막 페이지에 갔을 때 마지막페이지에 대한 요청을 여러번 응답해서 중복되는 경우가 발생했습니다. 그래서 요청하는 부분이 아닌 응답하고 데이터를 넣는 과정에서 조건문을 넣어 이를 해결하였습니다. "
+          },
+          {
+            no: 6,
+            img: wallpaperfinder6,
+            title: "크롤링(1) 프록시",
+            desc: "크롤링 프록시에 대한 내용."
+          },
+          {
+            no: 7,
+            img: wallpaperfinder7,
+            title: "크롤링(2) 반응형",
+            desc: "검색창 하단에 \"데스크탑 이용시 width를 1070이상을 유지\"하라는 데의 이유입니다. 크롤링을 하려면 해당 웹사이트의 선택자에 접근을 해야하는데 제가 크롤링한 alphacoder라는 사이트는 디바이스에 따라 선택자가 달랐습니다. 그래서 innerWidth가 1070보다 클 경우 데스크탑으로 인식하게끔 코드를 짜봤습니다."
+          }
+        ]
       },
       {
         project_no: "PROJECT4",
