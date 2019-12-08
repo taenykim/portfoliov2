@@ -9,7 +9,6 @@ import html from "./skills_logo/html5.png";
 import css from "./skills_logo/css3.png";
 import js from "./skills_logo/javascript.svg";
 import nodejs from "./skills_logo/nodejs.png";
-import jquery from "./skills_logo/jquery.png";
 import sass from "./skills_logo/sass.png";
 import aws from "./skills_logo/aws.png";
 import mysql from "./skills_logo/mysql.png";
@@ -33,7 +32,6 @@ class Home extends Component {
         { title: "HTML", img: html },
         { title: "CSS", img: css },
         { title: "JS", img: js },
-        { title: "Jquery", img: jquery },
         { title: "nodeJS", img: nodejs },
         { title: "SASS", img: sass },
         { title: "AWS", img: aws },

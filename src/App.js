@@ -78,6 +78,13 @@ class App extends Component {
             title: "반응형 디자인",
             desc:
               "디바이스의 종류에 맞게 레이아웃이 변하게끔 디자인하였습니다. 특히 스마트폰일 경우 카테고리 기능을 없애고 옷 정보등록 버튼을 우측 하단에 위치하였습니다. css @media 문법을 알기 전이라 js파일 내부에서 InnerWidth 값에 따라 다른 코드를 실행하게끔 구현하였습니다."
+          },
+          {
+            no: 6,
+            img: pj1_main,
+            title: "현재",
+            desc:
+              "서버를 닫아놓아서 사이트의 방문은 불가능합니다.ㅜㅜ"
           }
         ]
       },
@@ -97,7 +104,7 @@ class App extends Component {
             img: portfolio1,
             title: "메인페이지",
             desc:
-              "전체적인 페이지의 구성은 HOME, PROJECT 두개의 섹션이 있으며, 상단에 좌우에 홈버튼과 메뉴버튼을 위치시켰고 중앙에는 현재 보이고있는 컨텐츠의 TITLE을 보여주고자 하였습니다. css는 주로 flex box를 사용하였고, 애니메이션은 wow.js와 animate.css를 이용해보았습니다."
+              "상단에 고정으로 좌우에 홈버튼과 메뉴버튼을 위치시켰고 중앙에는 현재 보이고있는 컨텐츠의 TITLE을 보여주고자 하였습니다. css는 주로 flex box를 사용하였고, 애니메이션은 wow.js와 animate.css를 이용해보았습니다."
           },
           {
             no: 2,
@@ -143,7 +150,7 @@ class App extends Component {
         tag: "#react #cheerio #크롤링 #mansory #반응형",
         img: pj3_main,
         second_body:
-          "배경화면 크롤링 사이트입니다. alpacoders라는 대형 Wallpaper 사이트를 자주 이용하는 편인데 키워드를 검색했을 때, 30개씩 정보를 보여주고 다음페이지를 클릭해서 넘어가야지만 다음 정보를 가져오는데에 불편함을 느껴 키워드를 검색했을 때 한눈에 이미지들을 보면 좋을 것 같다는 생각에 웹사이트를 기획해보았습니다.",
+          "배경화면 크롤링 사이트입니다. alpacoders라는 대형 Wallpaper 사이트를 자주 이용하는 편인데 키워드를 검색했을 때, 30개씩 정보를 보여주고 다음페이지를 클릭해서 넘어가야지만 다음 정보를 가져오는데에 불편함을 느껴 키워드를 검색했을 때 클릭하는 번거로움 없이 한눈에 이미지들을 보면 좋을 것 같다는 생각에 웹사이트를 기획해보았습니다.",
         visit_link: "https://taenykim.github.io/smartwallpaperfinder/",
         github_link: "https://github.com/taenykim/smartwallpaperfinder",
         desc: [
@@ -152,7 +159,7 @@ class App extends Component {
             img: wallpaperfinder1,
             title: "메인페이지",
             desc:
-              '화면 중앙에 검색창과 우측상단에 해당 키워드의 이미지 개수와 현재 보여지는 이미지 개수정보, 하단에는 이미지 레이아웃 형태를 선택할 수 있는 3개의 버튼을 두었습니다. 검색창 하단에 "데스크탑 이용시 width를 1070이상을 유지"하라는 메시지를 적어놓았는데 밑에서 설명하도록 하겠습니다.'
+              '화면 중앙에 검색창과 우측상단에 해당 키워드의 이미지 개수와 현재 보여지는 이미지 개수정보, 하단에는 이미지 레이아웃 형태를 선택할 수 있는 3개의 버튼을 두었습니다. 검색창 하단에 "데스크탑 이용시 width를 1070이상을 유지"하라는 메시지를 적어놓았는데 밑에서 설명하도록 하겠습니다. TIP) 외국 사이트다보니 검색어는 영문을 입력해야합니다.'
           },
           {
             no: 2,
