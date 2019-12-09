@@ -9,7 +9,6 @@ import html from "./skills_logo/html5.png";
 import css from "./skills_logo/css3.png";
 import js from "./skills_logo/javascript.svg";
 import nodejs from "./skills_logo/nodejs.png";
-import jquery from "./skills_logo/jquery.png";
 import sass from "./skills_logo/sass.png";
 import aws from "./skills_logo/aws.png";
 import mysql from "./skills_logo/mysql.png";
@@ -33,7 +32,6 @@ class Home extends Component {
         { title: "HTML", img: html },
         { title: "CSS", img: css },
         { title: "JS", img: js },
-        { title: "Jquery", img: jquery },
         { title: "nodeJS", img: nodejs },
         { title: "SASS", img: sass },
         { title: "AWS", img: aws },
@@ -88,23 +86,22 @@ class Home extends Component {
             >
               저는 프론트엔드 개발자 김태은입니다. 대학교에서 인터렉션 디자인과
               프로그래밍 수업을 듣고 흥미를 느껴 개발 공부를 시작하게 되었고,
-              디자인과 서버를 잘 이해하는 프론트엔드 개발자가 되는 것이
-              목표입니다.
+              디자인🎨과 서버💻를 잘 이해하는 프론트엔드 개발자가 되는 것이
+              목표입니다.🙂
             </div>
             <div
-              className="home_about_desc_foot wow fadeInUp"
-              data-wow-delay="0.2s"
+              className="home_about_desc_foot"
             >
               <div className="home_about_desc_foot_sns">
                 {this.state.about_info.sns.map(list => {
                   return (
-                    <a style={image_container_style} href={list.link}>
+                    <a style={image_container_style} href={list.link} target="_blank">
                       <img style={image_style} src={list.img} />
                     </a>
                   );
                 })}
               </div>
-              <div className="home_about_desc_foot_skills">
+              <div className="home_about_desc_foot_skills" >
                 {this.state.about_info.skills.map(list => {
                   return (
                     <div style={image_container_style}>
@@ -115,7 +112,7 @@ class Home extends Component {
               </div>
             </div>
           </div>
-          <img className="home_about_image wow fadeInUp" src={about} />
+          <img className="home_about_image" src={about} />
         </div>
         <div className="home_project_title wow fadeInDown">PROJECT</div>
         <div className="home_project_subtitle wow fadeInUp">
@@ -124,7 +121,7 @@ class Home extends Component {
         <div className="home_project_container">
           {this.state.project_info.map(list => {
             return (
-              <div className="home_project_item wow fadeInUp">
+              <div className="home_project_item">
                 <div className="home_project_item_desc">
                   <div style={project_item_desc_style}>{list.title}</div>
                   {list.sub}

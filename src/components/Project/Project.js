@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import "./Project.css";
 
 class Project extends Component {
@@ -48,6 +48,7 @@ class Project extends Component {
         <div className="project_about_container">
           {this.state.project_info[index].desc.map(desc => {
             return (
+              <Fragment>
               <div className="project_about_pair">
                 <img className="project_about_image" src={desc.img} />
                 <div className="project_about_desc">
@@ -55,6 +56,13 @@ class Project extends Component {
                   <div className="project_about_desc_body">{desc.desc}</div>
                 </div>
               </div>
+              <div style={{
+                alignSelf:"center",
+                width: "80vw",
+                borderTop:"1px solid #ccc",
+                marginTop:"40px",
+                marginBottom: "80px"
+              }}></div></Fragment>
             );
           })}
         </div>

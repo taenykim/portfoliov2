@@ -166,3 +166,13 @@
     flex-direction: column;
   }
 }
+@media (max-width: 500px) {
+  .project_about_desc_head {
+    font-size: 24px;
+  }
+  .project_about_desc_body {
+    padding-right: 0px;
+    font-size: 12px;
+    line-height: 25px;
+  }
+}
