@@ -84,7 +84,7 @@ class App extends Component {
             img: pj1_main,
             title: "현재",
             desc:
-              "서버를 닫아놓아서 사이트의 방문은 불가능합니다.ㅜㅜ"
+              "서버를 닫아놓아서 사이트의 방문은 불가능합니다.ㅜ_ㅜ"
           }
         ]
       },
